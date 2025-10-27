@@ -6,6 +6,7 @@ import { Postagem } from '../../postagem/entities/postagem.entity';
 @Entity({ name: 'tb_usuarios' })
 export class Usuario {
   @PrimaryGeneratedColumn()
+  @ApiProperty()
   id: number;
 
   @IsNotEmpty()
